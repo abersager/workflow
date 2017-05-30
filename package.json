@@ -1,0 +1,21 @@
+{
+  "name": "workflow",
+  "version": "1.0.0-alpha",
+  "description": "Workflow semi-automates repetitive tasks developers perform as part of our development process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "private": true,
+  "license": "Unlicensed",
+  "dependencies": {
+    "each-cons": "^1.0.0",
+    "jira": "^0.9.2",
+    "jira-connector": "^2.6.0",
+    "lodash.template": "^4.4.0",
+    "semver": "^5.3.0",
+    "semver-sort": "0.0.4",
+    "shelljs": "^0.7.7"
+  }
+}

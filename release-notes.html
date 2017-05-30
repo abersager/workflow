@@ -1,0 +1,14 @@
+# Release notes
+
+<% issuesByRelease.map((release) => { %>
+## Release <%= release['release'] %>
+
+  - <%= release['date'] ? `Release date: ${release['date']}` : 'Not released' %>
+
+### Stories in this release
+
+  <% release.issueIds.forEach((id) => { const issue = issueMap[id] %>
+  <% if (issue && issue.summary && issue.url) { %> - [<%= id %> / <%= issue.summary %>](<%= issue.url %>)<% } else { %> - <%= id %> / Unknown<% } %>
+  <% }) %>
+
+<% }) %>
